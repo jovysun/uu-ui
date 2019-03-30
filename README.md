@@ -1,29 +1,29 @@
-# uu-loading
+# 搭建一套自己Vue UI组件库范式
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+# 若npm包发布成功后可以如下使用
+## Install
+```shell
+npm install uu-ui -S
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+## Quick Start
+``` javascript
+import Vue from 'vue'
+import UU from 'uu-ui'
+import 'uu-ui/lib/uu-ui.css'
+
+Vue.use(UU)
+
+// or
+import {
+  Loading,
+  Button
+  // ...
+} from 'uu-ui'
+
+Vue.component(Loading.name, Loading)
+Vue.component(Button.name, Button)
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Browser Support
+Modern browsers and Internet Explorer 10+.
